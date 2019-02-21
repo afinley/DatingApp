@@ -8,8 +8,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp.API.Controllers
 {
+    //POST http://localhost:5000/api/values/5
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class ValuesController : ControllerBase
     {
         private readonly DataContext _context;
         public ValuesController(DataContext context)
